@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: 100vh;
     color: rgb(240, 240, 240);
+    overflow: hidden;
 }
 
 a {
@@ -38,7 +39,7 @@ body::after {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
@@ -173,5 +174,182 @@ footer {
 
 footer {
     font-size: 1.3rem;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
+}
+
+/* Responsiveness */
+
+@media (min-width: 992px) {
+    header {
+        width: 90%;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    .img-content {
+        width: 80%;        
+    }
+
+    .social-media-container {        
+        min-height: 4vh;
+        margin: 3rem auto 0;        
+    }
+
+    .sm-link {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        width: 50%;
+        font-size: 1.2rem;
+        margin: 3rem auto 0;
+    }
+}
+
+@media (min-width: 768px){
+    header {
+        width: 95%;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .img-content {
+        width: 85%; 
+    }
+
+    .social-media-container {        
+        min-height: 4vh;
+        margin: 3rem auto 0;        
+    }    
+
+    footer {        
+        font-size: 1.1rem;        
+    }
+}
+
+@media (min-width: 600px){
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+
+    header {
+        width: 98%;
+    }
+
+    main {
+        width: 90%;        
+    }
+
+    .intro{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    .img-content {
+        width: 90%;        
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+
+    .img-content img {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .img-content p {
+        margin-left: 0rem;
+        text-align: center;
+    }    
+
+    footer {
+        width: 90%;        
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        overflow: auto;
+        height: 100%;
+    }
+
+    header {
+        width: 98%;
+    }
+
+    .nav-bar {
+        margin-top: 2.5rem;
+    }
+
+    main {
+        width: 95%;        
+    }    
+
+    .img-content {
+        width: 95%;        
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+
+    .img-content img {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 2rem;
+    }
+
+    .img-content p {
+        margin-left: 0rem;
+        text-align: center;
+    }    
+
+    footer {
+        width: 100%;        
+    }
+}
+
+@media (max-width: 480px){    
+    header {
+        width: 99%;
+    }    
+
+    .logo a {
+        font-size: 3rem;        
+    }
+
+    .nav-bar {
+        margin-top: 1.8rem;
+    }
+
+    .nav-bar li {
+        padding: 0 .5rem;
+    }
+
+    .nav-bar a {
+        font-size: 1.2rem;        
+    }
+
+    .intro{
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    .img-content {
+        width: 95%;        
+        flex-direction: column;
+        font-size: 1.1rem;
+    }
+
+    .img-content img {
+        width: 70%;
+        height: 70%;        
+    }    
+
+    footer {
+        font-size: 1.1rem;      
+    }
 }

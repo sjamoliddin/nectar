@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/navigation-and-video.css">
+        <link rel="stylesheet" href="styles/album.css">
+    
+        <!-- ICON -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+        <link rel="manifest" href="images/icon/site.webmanifest">
+        <link rel="mask-icon" href="images/icon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/icon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="images/icon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <title>Nectar</title>
+    </head>
 <body>
+    <video muted autoplay loop class="video-container">
+        <source src="videos/ew_cut.mp4" type="video/mp4" />
+    </video>
+
+    <header>
+        <h1 class="logo"><a href="./index.html">Nectar</a></h1>
+
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="./album.html" class="nav-link">Album</a></li>
+                <li><a href="#" class="nav-link">Lyrics</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <script src="./script/album.js"></script>
 </body>
 </html>

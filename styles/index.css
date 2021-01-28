@@ -13,6 +13,7 @@ main {
     font-size: 1.5rem;
     text-align: center;
     line-height: 2rem;
+    width: 75%;
 }
 
 .intro span {
@@ -41,7 +42,7 @@ main {
 }
 
 .img-content p {
-    margin-left: 3rem;
+    margin-left: 3rem;    
 }
 
 /* ===== Social Media & Footer Section ===== */

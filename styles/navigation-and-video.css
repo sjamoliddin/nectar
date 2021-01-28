@@ -22,6 +22,18 @@ p {
     font-family: 'Syne', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #3b090b;
+}
+
 /* ===== Background Video ===== */
 .video-container {
     position: absolute;
